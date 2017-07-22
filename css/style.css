@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #FFF;
+	font-family: PT Sans Narrow, sans-serif;
+}
+.wrap{
+	width: 500px;
+	background-color: #f8f8f8;
+	padding: 20px;
+	border-right: 50px solid #252525;
+	margin: 30px auto;
+}
+
+header{
+	background-color: #484848;
+}
+
+header h2{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+	line-height: 50px; /*Увеличение высоты строки*/
+	/*background-image: url(../img/dlet-sbicon5.gif), url(../img/dlet-sbspan.gif);
+	background-position: left center, right center;
+	background-repeat: no-repeat;*/    /*выравниваем картинку с помощью бекграундов*/
+
+	/*background: url(../img/dlet-sbicon5.gif) left center no-repeat,
+				url(../img/dlet-sbspan.gif) right center no-repeat;*/
+	padding-left: 70px;
+	position: relative;/*для позиционирования. родительскому элементу прописываем обязательно*/
+}
+
+header h2:before{
+	content: "";
+	display: block;
+	position: absolute;
+
+	width: 50px;
+	height: 50px;
+	background: url(../img/dlet-sbicon5.gif);
+	left: 0;
+}
+header h2:after{
+	content: "";
+	display: block;
+	position: absolute;
+
+	width: 37px;
+	height: 50px;
+	background: url(../img/dlet-sbspan.gif);
+	right: 0;
+	top: 0; /*выравниваем картинку с помощью абсолютного позиционирования*/
+}
+a{
+	color: #404040;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.tags{
+	margin-top: 15px;
+	font-size: 0;
+	text-align: justify;
+	margin-right: -5px;
+}
+
+.tags li{
+	background-color: #FFF;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
+
+.tags li a{
+	padding: 5px;
+	display: inline-block;
+}
+
+footer{
+	margin-top: 20px;
+	padding-left: 5px;
+}
+
+/*header:after {
+	content: '';
+	clear:both;
+	display: table;
+}
+
+header h2{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+	padding: 13px 20px;
+	float: left;
+}
+
+.icon1{
+	float: left;
+}
+.icon2{
+	float: right;
+}*/
+
+
